@@ -129,11 +129,35 @@
 
   /* CUADRICULA CELDAS */
 
+  .container-numeros {
+    width: 260px;
+  }
+
+  .container-numeros div {
+    width: 45px;
+    height: 45px;
+  }
+
+  .container-numeros div h5 {
+    font-size:18px;
+    margin: 12px;
+  }
+
+  .container-celda {
+    width: 260px;
+    margin-top: 2px;
+  }
+
+  .container-celda button {
+    width: 40.8px;
+    height: 40.8px;
+  }
+
   .container-play {
-    width: 280px;
+    width: 260px;
   }
   .btn-play.intermitente {
-    width: 90% !important;
+    width: 100% !important;
   }
 
 }
