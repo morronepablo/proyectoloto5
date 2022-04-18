@@ -158,7 +158,6 @@ export class BotonComponent implements OnInit {
     }
   ];
 
-
   public apuestaUsuario = [];
 
   public contador = 0;

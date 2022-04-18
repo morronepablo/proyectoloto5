@@ -25,14 +25,6 @@
     <button id={{item.id}} (click)="goBoton(item.id)" style="cursor: pointer">{{item.numero}}</button>
   </div>
 </div>
-<!-- <div class="container-jackTitulo">
-  <h4>JACKPOT</h4>
-</div>
-<div class="container-jack">
-  <div *ngFor="let item of jackArray">
-    <button id={{item.id}} (click)="goJack(item.id)" style="cursor: pointer">{{item.numero}}</button>
-  </div>
-</div> -->
 <div class="container-play">
   <button class="btn-play" (click)="goPlay()" *ngIf="!playStart" [disabled]="true">
     <i class="far fa-play-circle"></i>
