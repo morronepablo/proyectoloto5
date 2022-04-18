@@ -1,0 +1,145 @@
+/* CUADRICULA CELDAS */
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-numeros {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 328px;
+  height: 60px;
+  margin-top: 10px;
+  /* border: 1px solid black; */
+  /* padding: 5px 0px 5px 5px; */
+  justify-content: space-between;
+  /*border: 1px solid black;*/
+}
+
+.container-numeros div {
+  width: 60px;
+  height: 60px;
+  background-color: black;
+  justify-content: space-between;
+  border-radius: 50%;
+  box-shadow: 4px 4px 8px gray;
+}
+
+.container-numeros div h5 {
+  text-align: center;
+  color: white;
+  font-size:24px;
+  margin: 17px;
+  font-weight: 600;
+}
+
+.container-celda {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 328px;
+  margin-top: 20px;
+  border: 1px solid black;
+  padding: 5px 0px 5px 5px;
+  /*border: 1px solid black;*/
+}
+
+
+
+
+
+
+
+.container-celda button {
+  height: 52px;
+  width: 52px;
+  margin-right: 2px;
+  margin-bottom: 2px;
+  background-color: green;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  border: none;
+  border-radius: 2px;
+}
+
+
+.container-celda button.botonActivo {
+  background-color: red;
+}
+
+.container-jack button.botonActivo {
+  background-color: blue;
+}
+
+.container-play {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 328px;
+  margin-top: 20px;
+}
+
+.btn-play {
+  background: #529DFE;
+  color: yellow;
+  border: none;
+  border-radius: 10px;
+  width: 100% !important;
+  height: 70px !important;
+  cursor: pointer;
+}
+
+.btn-play button[disabled=disabled], button:disabled {
+  background-color: rgb(206, 206, 206);
+  color: grey;
+}
+
+.btn-play {
+  width: 100px;
+  height: 50px;
+  font-size: 30px;
+  margin: auto;
+}
+
+.intermitente{
+  padding: 20px 20px;
+
+  animation: infinite resplandorAnimation 1s;
+
+}
+
+@keyframes resplandorAnimation {
+  0%,100%{
+
+    background: #2381fc;
+  }
+  50%{
+
+    background: #006eff;
+  }
+
+}
+
+@media(min-width: 320px) and (max-width: 767px) {
+  .fixcontent{
+    max-width: 320px;
+
+  }
+
+  .section__inputnote{
+      margin-bottom: 0%;
+  }
+
+  /* CUADRICULA CELDAS */
+
+  .container-play {
+    width: 280px;
+  }
+  .btn-play.intermitente {
+    width: 90% !important;
+  }
+
+}
