@@ -22,7 +22,10 @@
 </div>
 <div class="container-celda">
   <div *ngFor="let item of botonesArray">
-    <button id={{item.id}} (click)="goBoton(item.id)" style="cursor: pointer">{{item.numero}}</button>
+    <button *ngIf="item.id == 0" id={{item.id}} (click)="goBoton(item.id)" style="cursor: pointer">{{item.numero}}</button>
+  </div>
+  <div *ngFor="let item of botonesArray">
+    <button *ngIf="item.id != 0" id={{item.id}} (click)="goBoton(item.id)" style="cursor: pointer">{{item.numero}}</button>
   </div>
 </div>
 <div class="container-play">
